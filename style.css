@@ -1,0 +1,105 @@
+:root {
+	--color-Nutmeg: hsl(14, 45%, 36%);
+	--color-Dark-Raspberry: hsl(332, 51%, 32%);
+	--color-Rose-White: hsl(330, 100%, 98%);
+	--color-Eggshell: hsl(30, 54%, 90%);
+	--color-Light-Grey: hsl(30, 18%, 87%);
+	--color-Wenge-Brown: hsl(30, 10%, 34%);
+	--color-Dark-Charcoal: hsl(24, 5%, 18%);
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-Eggshell);
+}
+.container {
+	width: 800px;
+	margin: 20%;
+	display: flex;
+	gap:5px;
+	background-color: white;
+}
+img {
+	width: 700px;
+	height: 300px;
+	margin: 50px;
+	border-radius: 8px
+}
+.omelette-recipe {
+	margin-left: 50px
+}
+.omelette-recipe p {
+	margin-top: 20px;
+}
+
+.preparation-time {
+	margin-left: 50px;
+	margin-top: 10px;
+	background-color: var(--color-Rose-White);
+	border-radius: 8px;
+	padding: 10px;
+	width: 680px;
+}
+.ingredients {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.preparation-time > ul {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.ingredients > ul {
+	margin-left: 25px;
+	margin-top: 10px;
+}
+.line {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	margin-left: 50px;
+	margin-top: 10px;
+
+}
+.line::before, .line::after {
+	content: "";
+	height: 2px;
+	width: 350px;
+	background-color: black;
+	display: block;
+}
+h2 {
+	color: var(--color-Nutmeg);
+	font-family: "Young Serif", serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+p {
+	font-family: "Outfit", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 600;
+  	font-style: normal;
+	font-size: 15px;
+}
+h1 {
+	font-family: "Young Serif", serif;
+  	font-weight: 700;
+  	font-style: normal;
+}
+.instructions {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.instructions-section {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.instructions-section > h2 {
+	font-size: 20px;
+	
+}
